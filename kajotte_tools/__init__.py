@@ -8,7 +8,7 @@ Author: Kajotte Studio (kajotte-studio.com)
 import os
 
 # Terminal color initialization (essential for Windows systems)
-os.system('echo.')
+os.system('echo.') # nosec B605
 
 class Colors:
     # Reset all formatting
