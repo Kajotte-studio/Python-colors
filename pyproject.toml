@@ -21,7 +21,7 @@ classifiers = [
 ]
 
 [tool.setuptools]
-# Automatycznie znajdzie folder kajotte_tools
+# It will automatically find the kajotte_tools folder / Automatycznie znajdzie folder kajotte_tools
 packages = ["kajotte_tools"]
 
 [project.urls]
