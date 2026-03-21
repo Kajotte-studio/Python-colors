@@ -26,7 +26,7 @@ This package provides a complete set of ANSI escape sequences for terminal text 
 Install the package via pip:
 
 ```bash
-pip install kajotte-studio-tools
+pip install kajotte-tools
 ```
 
 ### 🛠 Usage
