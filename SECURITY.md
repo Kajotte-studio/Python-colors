@@ -14,7 +14,7 @@ We take the security of our tools seriously. Currently, only the latest stable v
 If you discover a security vulnerability, please do not open a public issue. Disclosure of vulnerabilities should be handled discreetly to protect users.
 
 Please report any security-related concerns via:
-* **Email**: security@kajotte-studio.com
+* **Email**: support@kajotte-studio.com
 * **Official Website**: [kajotte-studio.com](https://kajotte-studio.com)
 
 ### Our Commitment:
