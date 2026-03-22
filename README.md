@@ -15,9 +15,6 @@
 
 A professional, zero-dependency ANSI color encapsulation library for Python. Designed by **Kajotte Studio** for developers who value clean code and terminal aesthetics.
 
-
-
-
 ---
 
 ## 🚀 Overview
@@ -64,6 +61,16 @@ import kajotte_tools as kt
 ```
 ```bash
 print(kt.Colors.GREEN + "Clean code!" + kt.Colors.RESET)
+```
+
+---
+
+### Colors Preview
+
+Instantly visualize the full palette of 32 colors and available formatting styles in your terminal.
+
+```bash
+preview()
 ```
 
 ---
