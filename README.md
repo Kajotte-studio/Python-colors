@@ -95,6 +95,8 @@ Detailed implementation details and the logic behind this class structure can be
 
 Following the Kajotte Studio principle, this library provides only what is necessary, ensuring maximum performance and zero overhead for your CLI applications and bots.
 
+---
+
 <div align="center">
   <img src="https://img.shields.io/badge/License-MIT-black?style=flat-square" alt="MIT License" />
   <br />
