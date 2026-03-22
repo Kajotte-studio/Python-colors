@@ -71,6 +71,44 @@ Instantly visualize the full palette of 32 colors and available formatting style
 Colors.preview()
 ```
 
+### New: Terminal Tokens
+
+Standardized status indicators for your console applications. No more manual formatting!
+
+```python
+from kajotte_tools import Tokens
+
+print(f"{Tokens.SUCCESS} Operation completed!")
+print(f"{Tokens.ERROR} Connection failed.")
+print(f"{Tokens.INFO} System update available.")
+print(f"{Tokens.WARN} Low disk space.")
+```
+
+You can preview all available tokens using:
+
+```python
+Tokens.list_tokens()
+```
+
+### Visual Progress Timer
+Track your long-running tasks with a built-in progress bar and real-time countdown.
+
+```python
+from kajotte_tools import Timer
+
+# Create a timer for a 10-second task
+session = Timer("Code Optimization", 10)
+session.start()
+```
+
+**Features:**
+ * **Dynamic Progress Bar:** Visual feedback of the task's completion.
+ * **Auto-formatting:** Professional headers and completion summaries.
+ * **Time Management:** Shows remaining time in seconds.
+
+Perfect for background processes, data optimization, or educational sessions.
+
+
 ---
 
 ### 📝 Technical Reference
