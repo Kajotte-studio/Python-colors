@@ -15,6 +15,10 @@
 
 A professional, zero-dependency ANSI color encapsulation library for Python. Designed by **Kajotte Studio** for developers who value clean code and terminal aesthetics.
 
+![PyPI - Version](https://img.shields.io/pypi/v/kajotte-studio-tools?color=blue&logo=pypi)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/kajotte-studio-tools?color=green&logo=pypi)
+![GitHub License](https://img.shields.io/github/license/Kajotte-studio/Python-colors?color=orange)
+
 ---
 
 ## 🚀 Overview
