@@ -29,15 +29,20 @@ This package provides a complete set of ANSI escape sequences for terminal text 
 
 ---
 
-## 📦 Installation
+### 📥 Installation
 
-Install the package via pip:
+You can install the package using one of the following methods:
+
+**Method 1: Official Stable Release (Recommended)**
+
+```bash
+pip install kajotte-studio-tools
+```
+
+**Method 2: Latest Development Version (GitHub)**
 
 ```bash
 pip install git+https://github.com/Kajotte-studio/Python-colors.git
-```
-```bash
-pip install kajotte-studio-tools
 ```
 
 ### 🛠 Usage
