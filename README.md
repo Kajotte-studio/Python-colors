@@ -71,7 +71,7 @@ Instantly visualize the full palette of 32 colors and available formatting style
 Colors.preview()
 ```
 
-### New: Terminal Tokens
+### Terminal Tokens
 
 Standardized status indicators for your console applications. No more manual formatting!
 
