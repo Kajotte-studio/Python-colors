@@ -8,7 +8,7 @@ Author: Kajotte Studio (kajotte-studio.com)
 import os
 
 # Terminal color initialization (essential for Windows systems)
-os.system('echo.') # nosec
+os.system('echo.')
 
 class Colors:
     # Reset all formatting
@@ -53,6 +53,43 @@ class Colors:
     BG_BR_MAGENTA = '\033[105m'
     BG_BR_CYAN    = '\033[106m'
     BG_BR_WHITE   = '\033[107m'
+
+def preview():
+    print(f"{Colors.BLACK}Colors.BLACK{Colors.RESET}")
+    print(f"{Colors.RED}Colors.RED{Colors.RESET}")
+    print(f"{Colors.GREEN}Colors.GREEN{Colors.RESET}")
+    print(f"{Colors.YELLOW}Colors.YELLOW{Colors.RESET}")
+    print(f"{Colors.BLUE}Colors.BLUE{Colors.RESET}")
+    print(f"{Colors.MAGENTA}Colors.MAGENTA{Colors.RESET}")
+    print(f"{Colors.CYAN}Colors.CYAN{Colors.RESET}")
+    print(f"{Colors.WHITE}Colors.WHITE){Colors.RESET}")
+
+    print(f"{Colors.BR_BLACK}Colors.BR_BLACK{Colors.RESET}")
+    print(f"{Colors.BR_RED}Colors.BR_RED{Colors.RESET}")
+    print(f"{Colors.BR_GREEN}Colors.BR_GREEN{Colors.RESET}")
+    print(f"{Colors.BR_YELLOW}Colors.BR_YELLOW{Colors.RESET}")
+    print(f"{Colors.BR_BLUE}Colors.BR_BLUE{Colors.RESET}")
+    print(f"{Colors.BR_MAGENTA}Colors.BR_MAGENTA{Colors.RESET}")
+    print(f"{Colors.BR_CYAN}Colors.BR_CYAN{Colors.RESET}")
+    print(f"{Colors.BR_WHITE}Colors.BR_WHITE){Colors.RESET}")
+
+    print(f"{Colors.BG_BLACK}Colors.BG_BLACK{Colors.RESET}")
+    print(f"{Colors.BG_RED}Colors.BG_RED{Colors.RESET}")
+    print(f"{Colors.BG_GREEN}Colors.BG_GREEN{Colors.RESET}")
+    print(f"{Colors.BG_YELLOW}Colors.BG_YELLOW{Colors.RESET}")
+    print(f"{Colors.BG_BLUE}Colors.BG_BLUE{Colors.RESET}")
+    print(f"{Colors.BG_MAGENTA}Colors.BG_MAGENTA{Colors.RESET}")
+    print(f"{Colors.BG_CYAN}Colors.BG_CYAN{Colors.RESET}")
+    print(f"{Colors.BG_WHITE}Colors.BG_WHITE){Colors.RESET}")
+
+    print(f"{Colors.BG_BR_BLACK}Colors.BG_BR_BLACK{Colors.RESET}")
+    print(f"{Colors.BG_BR_RED}Colors.BG_BR_RED{Colors.RESET}")
+    print(f"{Colors.BG_BR_GREEN}Colors.BG_BR_GREEN{Colors.RESET}")
+    print(f"{Colors.BG_BR_YELLOW}Colors.BG_BR_YELLOW{Colors.RESET}")
+    print(f"{Colors.BG_BR_BLUE}Colors.BG_BR_BLUE{Colors.RESET}")
+    print(f"{Colors.BG_BR_MAGENTA}Colors.BG_BR_MAGENTA{Colors.RESET}")
+    print(f"{Colors.BG_BR_CYAN}Colors.BG_BR_CYAN{Colors.RESET}")
+    print(f"{Colors.BG_BR_WHITE}Colors.BG_BR_WHITE){Colors.RESET}")
 
 if __name__ == "__main__":
     print(f"{Colors.BG_BR_RED}{Colors.WHITE} PALETTE TEST {Colors.RESET}")
