@@ -36,6 +36,9 @@ Install the package via pip:
 ```bash
 pip install git+https://github.com/Kajotte-studio/Python-colors.git
 ```
+```bash
+pip install kajotte-studio-tools
+```
 
 ### 🛠 Usage
 Simply import the Colors class and use f-strings to style your output.
