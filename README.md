@@ -63,8 +63,6 @@ import kajotte_tools as kt
 print(kt.Colors.GREEN + "Clean code!" + kt.Colors.RESET)
 ```
 
----
-
 ### Colors Preview
 
 Instantly visualize the full palette of 32 colors and available formatting styles in your terminal.
