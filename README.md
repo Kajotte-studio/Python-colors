@@ -1,7 +1,7 @@
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-Kajotte--Studio-ea4aaa?style=for-the-badge&logo=github-sponsors)](https://kajotte-studio.com/support_en.html)
 # Kajotte Studio: Terminal Colors
 
-![Python Version](https://img.shields.io/badge/Python-3.6%2B-blue?logo=python&logoColor=white)
+![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen)
 ![Release](https://img.shields.io/github/v/release/Kajotte-studio/Python-colors?include_prereleases&label=Release&color=blue)
 <img src="https://img.shields.io/badge/License-MIT-black?style=flat-square" alt="MIT License" />
