@@ -66,6 +66,16 @@ import kajotte_tools as kt
 print(kt.Colors.GREEN + "Clean code!" + kt.Colors.RESET)
 ```
 
+---
+
+### 📝 Technical Reference
+
+Detailed implementation details and the logic behind this class structure can be found in the technical documentation on the blog:
+
+🔗 **[Internal Reference: index_blog_post_44_en.html](https://kajotte-studio.com/index_blog_post_44_en.html)**
+
+---
+
 ## ⚖️ License & Documentation
 
 ### License: MIT License.
