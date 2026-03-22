@@ -1,11 +1,16 @@
-# LEGAL & TECHNICAL DOCUMENTATION: https://kajotte-studio.com/docs
+# TECHNICAL DOCUMENTATION: https://kajotte-studio.com/docs
 """
-Module: All Colors & Backgrounds
+Module: Kajotte Tools
 Purpose: Explore practical examples of ANSI color encapsulation
 License: MIT
 Author: Kajotte Studio (kajotte-studio.com)
+
+Terminal Colors (Python-colors) Kajotte Tools:
+https://github.com/Kajotte-studio/Python-colors
 """
 import os
+import sys
+import time
 
 # Terminal color initialization (essential for Windows systems)
 os.system('echo.') # nosec
@@ -56,7 +61,7 @@ class Colors:
 
     @staticmethod
     def preview():
-        print(f"{Colors.BLACK}Colors.BLACK{Colors.RESET}")
+        print(f" \n{Colors.BLACK}Colors.BLACK{Colors.RESET}")
         print(f"{Colors.RED}Colors.RED{Colors.RESET}")
         print(f"{Colors.GREEN}Colors.GREEN{Colors.RESET}")
         print(f"{Colors.YELLOW}Colors.YELLOW{Colors.RESET}")
@@ -65,7 +70,7 @@ class Colors:
         print(f"{Colors.CYAN}Colors.CYAN{Colors.RESET}")
         print(f"{Colors.WHITE}Colors.WHITE){Colors.RESET}")
 
-        print(f"{Colors.BR_BLACK}Colors.BR_BLACK{Colors.RESET}")
+        print(f" \n{Colors.BR_BLACK}Colors.BR_BLACK{Colors.RESET}")
         print(f"{Colors.BR_RED}Colors.BR_RED{Colors.RESET}")
         print(f"{Colors.BR_GREEN}Colors.BR_GREEN{Colors.RESET}")
         print(f"{Colors.BR_YELLOW}Colors.BR_YELLOW{Colors.RESET}")
@@ -74,7 +79,7 @@ class Colors:
         print(f"{Colors.BR_CYAN}Colors.BR_CYAN{Colors.RESET}")
         print(f"{Colors.BR_WHITE}Colors.BR_WHITE){Colors.RESET}")
 
-        print(f"{Colors.BG_BLACK}Colors.BG_BLACK{Colors.RESET}")
+        print(f" \n{Colors.BG_BLACK}Colors.BG_BLACK{Colors.RESET}")
         print(f"{Colors.BG_RED}Colors.BG_RED{Colors.RESET}")
         print(f"{Colors.BG_GREEN}Colors.BG_GREEN{Colors.RESET}")
         print(f"{Colors.BG_YELLOW}Colors.BG_YELLOW{Colors.RESET}")
@@ -83,14 +88,53 @@ class Colors:
         print(f"{Colors.BG_CYAN}Colors.BG_CYAN{Colors.RESET}")
         print(f"{Colors.BG_WHITE}Colors.BG_WHITE){Colors.RESET}")
 
-        print(f"{Colors.BG_BR_BLACK}Colors.BG_BR_BLACK{Colors.RESET}")
+        print(f" \n{Colors.BG_BR_BLACK}Colors.BG_BR_BLACK{Colors.RESET}")
         print(f"{Colors.BG_BR_RED}Colors.BG_BR_RED{Colors.RESET}")
         print(f"{Colors.BG_BR_GREEN}Colors.BG_BR_GREEN{Colors.RESET}")
         print(f"{Colors.BG_BR_YELLOW}Colors.BG_BR_YELLOW{Colors.RESET}")
         print(f"{Colors.BG_BR_BLUE}Colors.BG_BR_BLUE{Colors.RESET}")
         print(f"{Colors.BG_BR_MAGENTA}Colors.BG_BR_MAGENTA{Colors.RESET}")
         print(f"{Colors.BG_BR_CYAN}Colors.BG_BR_CYAN{Colors.RESET}")
-        print(f"{Colors.BG_BR_WHITE}Colors.BG_BR_WHITE){Colors.RESET}")
+        print(f"{Colors.BG_BR_WHITE}Colors.BG_BR_WHITE){Colors.RESET}\n ")
+
+class Tokens:
+    """Ready informational tokens for the terminal from Kajotte Studio"""
+    SUCCESS = f"{Colors.GREEN}[✓]{Colors.RESET}"
+    ERROR   = f"{Colors.RED}[✗]{Colors.RESET}"
+    INFO    = f"{Colors.BLUE}[i]{Colors.RESET}"
+    WARN    = f"{Colors.YELLOW}[!]{Colors.RESET}"
+    
+    @staticmethod
+    def list_tokens():
+        """Overview of all available tokens"""
+        print(f" \n{Tokens.SUCCESS} Operation successful")
+        print(f"{Tokens.ERROR} An error occurred")
+        print(f"{Tokens.INFO} System information")
+        print(f"{Tokens.WARN} Warning message\n ")
+
+class Timer:
+    def __init__(self, task: str, seconds: int):
+        self.task = task
+        self.total = seconds
+
+    def start(self):
+        """Starts countdown with a visual progress bar."""
+        print(f"{Colors.BR_CYAN}Starting session: {self.task}{Colors.RESET}")
+        
+        for i in range(self.total + 1):
+            percent = (i / self.total) * 100
+            block = int(percent / 5)
+            bar = "█" * block + "░" * (20 - block)
+            
+            # Bar color changes based on progress
+            bar_color = Colors.BR_RED if percent < 30 else Colors.BR_GREEN
+            
+            # \r allows overwriting the current line
+            sys.stdout.write(f"\r{bar} {bar_color}{percent:>5.1f}%{Colors.RESET} | Remaining: {self.total - i}s")
+            sys.stdout.flush()
+            time.sleep(1)
+        
+        print(f"\n{Colors.BG_BR_GREEN}{Colors.BLACK} COMPLETED: {self.task} {Colors.RESET}")
 
 if __name__ == "__main__":
     print(f"{Colors.BG_BR_RED}{Colors.WHITE} PALETTE TEST {Colors.RESET}")
