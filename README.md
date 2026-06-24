@@ -144,7 +144,6 @@ Following the Kajotte Studio principle, this library provides only what is neces
 ---
 
 <div align="center">
-  <img src="https://img.shields.io/badge/License-MIT-black?style=flat-square" alt="MIT License" />
   <br />
   <sub>Developed by Kajotte Studio</sub>
 </div>
