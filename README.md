@@ -4,6 +4,7 @@
 ![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen)
 ![Release](https://img.shields.io/github/v/release/Kajotte-studio/Python-colors?include_prereleases&label=Release&color=blue)
+<img src="https://img.shields.io/badge/License-MIT-black?style=flat-square" alt="MIT License" />
 
 ![Dependabot](https://img.shields.io/badge/Dependabot-Active-0250a3?style=flat&logo=dependabot)
 ![Security Policy](https://img.shields.io/badge/Security-Policy%20Active-success?style=flat&logo=github-security)
@@ -144,6 +145,7 @@ Following the Kajotte Studio principle, this library provides only what is neces
 ---
 
 <div align="center">
+  <img src="https://img.shields.io/badge/License-MIT-black?style=flat-square" alt="MIT License" />
   <br />
   <sub>Developed by Kajotte Studio</sub>
 </div>
